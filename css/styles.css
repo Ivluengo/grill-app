@@ -1,0 +1,99 @@
+body { 
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.title {
+  color: lightcoral;
+}
+
+.container {
+  display: grid;
+  grid-gap: 4rem;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin: 0 auto;
+  width: 90%;
+}
+
+#info {
+  background-color: #EEE; 
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  box-shadow: 0 3px 23px -9px rgba(0,0,0,0.35);
+  padding: 1em;
+  width: 300px;
+}
+
+#grills { 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  gap: 1rem;
+}
+
+.grill {
+  border-radius: 5px;
+  box-shadow: 0 0 0 10px white, 0 0 0 11px lightgray, 0 3px 23px rgba(0,0,0,0.35);
+  height: 200px;
+  margin: 2rem 1.5rem;
+  outline-offset: 10px;
+  position: relative;
+  width: 300px;
+}
+
+.grillTitle {
+  font-size: 1.3em;
+  font-weight: 300;
+  top: -4rem;
+  position: relative;
+}
+
+.grillItem {
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: flex;
+  font-size: 0.9em;
+  justify-content: center;
+  position: absolute;
+}
+
+.animated {
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;  
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
